@@ -1,0 +1,9 @@
+backend/venv/
+simulator/venv/
+ml/venv/
+frontend/node_modules/
+backend/mine_monitor.db
+backend/.env
+__pycache__/
+*.pyc
+.DS_Store
