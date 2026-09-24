@@ -3,7 +3,12 @@ import random
 import time
 from datetime import datetime, timezone
 
-BACKEND_URL = "http://127.0.0.1:8000/sensor-data"
+import os
+
+BACKEND_URL = os.environ.get(
+    "BACKEND_URL",
+    "https://mine-subsidence-monitor.onrender.com"
+)
 
 SEND_INTERVAL_SECONDS = 5  # how often each cycle sends readings
 
